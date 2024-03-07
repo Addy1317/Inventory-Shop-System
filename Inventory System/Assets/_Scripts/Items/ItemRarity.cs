@@ -10,3 +10,4 @@ namespace ShopAndInventory
         Legendary
     }
 }
+ 

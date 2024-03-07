@@ -46,10 +46,10 @@ namespace ShopAndInventory
         private void InitalizeInventoryUI(ItemScriptableObject[] itemList)
         {
             var itemUIList = new List<ItemScriptableObject>(itemList);
-            //inventoryUI = new StorageUI(inventoryUIPanel, itemUIList);
+            inventoryUI = new StorageUI(inventoryUIPanel, itemUIList);
         }
     
-        private void AddItemToInventory(ItemScriptableObject item, int quantity)
+        public void AddItemToInventory(ItemScriptableObject item, int quantity)
         {
             ItemScriptableObject itemFound = inventoryItems.Find((x) => x.name == item.name);
             int index = int.MinValue;
@@ -65,23 +65,29 @@ namespace ShopAndInventory
                 index = inventoryItems.IndexOf(itemFound);
             }
 
-            //inventoryUI.AddItemToStorageUI(item, quantity, index);
+            inventoryUI.AddItemToStorageUI(item, quantity, index);
             currentWeight += item.weight * quantity;
 
             if (!isGathering)
+            {
                 currentcoinsOwned -= item.buyingPrice * quantity;
+            }
 
             if (currentcoinsOwned < 0)
+            {
                 currentcoinsOwned = 0;
+            }
 
-            EventService.Instance.onInventoryUpdated.InvokeEvent(currentcoinsOwned, currentWeight);
+            EventService.Instance.onInventoryUpdatedEvent.InvokeEvent(currentcoinsOwned, currentWeight);
         }
         public void RemoveItemFromInventory(ItemScriptableObject item, int quantity)
         {
             ItemScriptableObject itemFound = inventoryItems.Find((x) => x.name == item.name);
 
             if (!itemFound || !CanRemoveItems(itemFound, quantity))
+            {
                 return;
+            }
 
             int index = inventoryItems.IndexOf(itemFound);
 
@@ -98,8 +104,8 @@ namespace ShopAndInventory
                 itemFound.quantity -= quantity;
             }
 
-            //inventoryUI.RemoveItemFromStorageUI(itemFound, quantity, index);
-            EventService.Instance.onInventoryUpdated?.InvokeEvent(currentcoinsOwned, currentWeight);
+            inventoryUI.RemoveItemFromStorageUI(itemFound, quantity, index);
+            EventService.Instance.onInventoryUpdatedEvent?.InvokeEvent(currentcoinsOwned, currentWeight);
         }
 
         public void FillInventory()
@@ -128,7 +134,9 @@ namespace ShopAndInventory
         public bool HasEnoughWeight(ItemScriptableObject item, int quantity)
         {
             if (currentWeight + item.weight * quantity > weightLimit)
+            {
                 return false;
+            }
 
             return true;
         }
@@ -136,7 +144,9 @@ namespace ShopAndInventory
         public bool HasEnoughCoins(ItemScriptableObject item, int quantity)
         {
             if (currentcoinsOwned < item.buyingPrice * quantity)
+            {
                 return false;
+            }
 
             return true;
         }
@@ -144,7 +154,10 @@ namespace ShopAndInventory
         private bool CanRemoveItems(ItemScriptableObject item, int quantity)
         {
             if (item.quantity < quantity)
+            {
                 return false;
+            }
+
             return true;
         }
     }
