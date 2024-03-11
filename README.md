@@ -35,7 +35,6 @@ GamePlay Video:
 
 https://github.com/Addy1317/Inventory-Shop-System/assets/92723657/a5e3d721-2fdf-4008-bc85-65537cb166af
 
-![Screenshot (153)](https://github.com/Addy1317/Inventory-Shop-System/assets/92723657/ac9b78d2-66f6-489b-a781-01be2c201c15)
 ![Screenshot (163)](https://github.com/Addy1317/Inventory-Shop-System/assets/92723657/c88a3966-441a-48b9-9a0a-65c00c4a75ce)
 ![Screenshot (162)](https://github.com/Addy1317/Inventory-Shop-System/assets/92723657/c8b00244-10f0-4d01-b55f-c5af804524b8)
 ![Screenshot (154)](https://github.com/Addy1317/Inventory-Shop-System/assets/92723657/9747ca67-9c04-4a53-ba9f-bdd3d995dc46)
