@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3868d16594bec143ab5b0280b7c564f, type: 3}
+  m_Name: RareSword
+  m_EditorClassIdentifier: 
+  itemUIPrefab: {fileID: 4302470829320239224, guid: 54e0535043c35d042ba03a06dd6e0d3c, type: 3}
+  itemIcon: {fileID: 21300000, guid: 8f28955d92038974a9b04aafaeea79b0, type: 3}
+  itemDescription: Clone of Witchers Sword
+  type: 2
+  rarity: 3
+  quantity: 2
+  weight: 15
+  buyingPrice: 50
+  sellingPrice: 60

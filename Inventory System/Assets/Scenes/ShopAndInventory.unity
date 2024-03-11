@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487677}
   - component: {fileID: 1487678}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ButtonsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,8 +152,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 916812049}
   - {fileID: 994867365}
+  - {fileID: 916812049}
   m_Father: {fileID: 798250104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -302,12 +302,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
+  m_fontSize: 10
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 12
+  m_fontSizeMin: 0
+  m_fontSizeMax: 10
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -387,10 +387,10 @@ RectTransform:
   - {fileID: 1433711162}
   m_Father: {fileID: 722070039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 185, y: -105.00003}
-  m_SizeDelta: {x: 150, y: 30}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 17}
+  m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9099719
 MonoBehaviour:
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowBuySellPanel
         m_Mode: 1
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 110393090}
   - component: {fileID: 110393089}
   - component: {fileID: 110393088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ComsumableGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,15 +700,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &110393090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 119424851}
   - component: {fileID: 119424850}
   - component: {fileID: 119424849}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TransactionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -600, y: -300}
+  m_AnchoredPosition: {x: 280, y: -151.75}
+  m_SizeDelta: {x: -640, y: -346.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119424849
 MonoBehaviour:
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 122943656}
   - component: {fileID: 122943658}
   - component: {fileID: 122943657}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 160518444}
   - component: {fileID: 160518446}
   - component: {fileID: 160518445}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 'WeightHolder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 162896857}
   - component: {fileID: 162896856}
   - component: {fileID: 162896859}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   materialsPanel: {fileID: 1276351252}
   inventoryServiceDataLoadPath: ItemSOs/Empty
   shopServiceDataLoadPath: ItemSOs/NonEmpty
-  inventoryScriptableObject: {fileID: 0}
+  inventoryScriptableObject: {fileID: 11400000, guid: 815b4ea9b4974984fbac9505d35cb70f, type: 2}
 --- !u!1 &169760864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1132,7 @@ GameObject:
   - component: {fileID: 169760865}
   - component: {fileID: 169760867}
   - component: {fileID: 169760866}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MoneyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 204535144}
   - component: {fileID: 204535143}
   - component: {fileID: 204535146}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AllButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowAllPanel
         m_Mode: 1
@@ -1356,7 +1356,7 @@ GameObject:
   - component: {fileID: 223681084}
   - component: {fileID: 223681086}
   - component: {fileID: 223681085}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ConfirmText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1560,7 @@ GameObject:
   - component: {fileID: 294906664}
   - component: {fileID: 294906666}
   - component: {fileID: 294906665}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 'ShopPanel '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1687,10 +1687,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1886812076}
   - {fileID: 811805596}
   - {fileID: 1931208240}
   - {fileID: 1450263519}
-  - {fileID: 1886812076}
   m_Father: {fileID: 722070039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 20
+    m_Top: 29
     m_Bottom: 0
   m_ChildAlignment: 4
   m_Spacing: 0
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 416270691}
   - component: {fileID: 416270690}
   m_Layer: 5
-  m_Name: ItemPrizetext
+  m_Name: ItemTypetext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,9 +1781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Weight
-
-'
+  m_text: Type
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f672e5b6a6cbad04a8697d8732b78c2a, type: 2}
   m_sharedMaterial: {fileID: -5070659408744638396, guid: f672e5b6a6cbad04a8697d8732b78c2a, type: 2}
@@ -1810,12 +1808,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 10
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 15
+  m_fontSizeMin: 0
+  m_fontSizeMax: 10
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1871,7 +1869,7 @@ GameObject:
   - component: {fileID: 510474549}
   - component: {fileID: 510474551}
   - component: {fileID: 510474550}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: IncreaseButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2004,7 @@ GameObject:
   - component: {fileID: 543402321}
   - component: {fileID: 543402320}
   - component: {fileID: 543402319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InventoryGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2047,15 +2045,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &543402320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2105,7 +2103,7 @@ GameObject:
   - component: {fileID: 553736881}
   - component: {fileID: 553736883}
   - component: {fileID: 553736882}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MaterialsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2239,7 +2237,7 @@ GameObject:
   - component: {fileID: 564934669}
   - component: {fileID: 564934671}
   - component: {fileID: 564934670}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2377,7 +2375,7 @@ GameObject:
   - component: {fileID: 583710810}
   - component: {fileID: 583710809}
   - component: {fileID: 583710812}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeaponsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2448,7 +2446,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowWeaponsPanel
         m_Mode: 1
@@ -2525,7 +2523,7 @@ GameObject:
   - component: {fileID: 690930821}
   - component: {fileID: 690930820}
   - component: {fileID: 690930819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AllShopGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2566,15 +2564,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &690930820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,7 +2624,7 @@ GameObject:
   - component: {fileID: 707255435}
   - component: {fileID: 707255434}
   - component: {fileID: 707255437}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MaterialsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,7 +2695,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowMaterialsPanel
         m_Mode: 1
@@ -2774,6 +2772,7 @@ GameObject:
   - component: {fileID: 722070042}
   - component: {fileID: 722070041}
   - component: {fileID: 722070040}
+  - component: {fileID: 722070043}
   m_Layer: 5
   m_Name: ItemInfoPanel
   m_TagString: Untagged
@@ -2800,8 +2799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 187.5, y: -137.5}
-  m_SizeDelta: {x: -449, y: -325}
+  m_AnchoredPosition: {x: 0, y: -137.5}
+  m_SizeDelta: {x: -400, y: -325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &722070040
 MonoBehaviour:
@@ -2861,6 +2860,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722070038}
   m_CullTransparentMesh: 1
+--- !u!114 &722070043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722070038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &798250103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2887,7 @@ GameObject:
   - component: {fileID: 798250107}
   - component: {fileID: 798250106}
   - component: {fileID: 798250105}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Buy/SellPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3228,12 +3242,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 10
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 15
+  m_fontSizeMin: 0
+  m_fontSizeMax: 10
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3289,7 +3303,7 @@ GameObject:
   - component: {fileID: 841260389}
   - component: {fileID: 841260391}
   - component: {fileID: 841260390}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3414,6 +3428,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841260388}
   m_CullTransparentMesh: 1
+--- !u!1 &875814562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 875814563}
+  - component: {fileID: 875814564}
+  m_Layer: 0
+  m_Name: UIManagger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &875814563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875814562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1058532579}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875814564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875814562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3bec146a67d5049a6fef5dafb8f7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemInfoPanel: {fileID: 722070038}
+  buySellPanel: {fileID: 798250103}
+  currencyText: {fileID: 1771451156}
+  weightText: {fileID: 943693341}
+  buySellInfoHeading: {fileID: 1731328065}
+  buySellInfoText: {fileID: 1156281636}
+  buySellButtonText: {fileID: 1433711163}
+  transactionStatusText: {fileID: 841260390}
 --- !u!1 &880517702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,7 +3493,7 @@ GameObject:
   - component: {fileID: 880517706}
   - component: {fileID: 880517705}
   - component: {fileID: 880517704}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResourcesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3451,8 +3517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -175}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -212}
+  m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880517704
 MonoBehaviour:
@@ -3538,7 +3604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5058824, g: 0.5058824, b: 0.5058824, a: 1}
+  m_Color: {r: 0.58431375, g: 0.58431375, b: 0.58431375, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3649,12 +3715,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 13
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 7
-  m_fontSizeMax: 15
+  m_fontSizeMin: 0
+  m_fontSizeMax: 13
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3712,7 +3778,7 @@ GameObject:
   - component: {fileID: 916812052}
   - component: {fileID: 916812051}
   - component: {fileID: 916812050}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: IncreaseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3798,7 +3864,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: UpdateByIncrease
         m_Mode: 1
@@ -3859,7 +3925,7 @@ GameObject:
   - component: {fileID: 943693340}
   - component: {fileID: 943693342}
   - component: {fileID: 943693341}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeightText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3992,7 +4058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967009322}
   - component: {fileID: 967009323}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ButtonHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4060,7 +4126,7 @@ GameObject:
   - component: {fileID: 991024893}
   - component: {fileID: 991024895}
   - component: {fileID: 991024894}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeaponText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4196,7 +4262,7 @@ GameObject:
   - component: {fileID: 994867368}
   - component: {fileID: 994867367}
   - component: {fileID: 994867366}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 'DecreaseButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4282,7 +4348,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: UpdateByDecrease
         m_Mode: 1
@@ -4392,8 +4458,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1360113157}
-  - {fileID: 1858019860}
+  - {fileID: 875814563}
+  - {fileID: 1850484445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1149688387
@@ -4409,7 +4475,7 @@ GameObject:
   - component: {fileID: 1149688391}
   - component: {fileID: 1149688390}
   - component: {fileID: 1149688389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'TreasuresGrid '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4470,15 +4536,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &1149688391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4528,7 +4594,7 @@ GameObject:
   - component: {fileID: 1156281635}
   - component: {fileID: 1156281637}
   - component: {fileID: 1156281636}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Amount of CoinsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4662,7 +4728,7 @@ GameObject:
   - component: {fileID: 1210078729}
   - component: {fileID: 1210078731}
   - component: {fileID: 1210078730}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeightImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4737,7 +4803,7 @@ GameObject:
   - component: {fileID: 1231257846}
   - component: {fileID: 1231257848}
   - component: {fileID: 1231257847}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4816,7 +4882,7 @@ GameObject:
   - component: {fileID: 1276351256}
   - component: {fileID: 1276351255}
   - component: {fileID: 1276351254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MaterialsGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4877,15 +4943,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &1276351256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4935,7 +5001,7 @@ GameObject:
   - component: {fileID: 1314679627}
   - component: {fileID: 1314679629}
   - component: {fileID: 1314679628}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShopTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5069,7 +5135,7 @@ GameObject:
   - component: {fileID: 1350009383}
   - component: {fileID: 1350009385}
   - component: {fileID: 1350009384}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShopHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,7 +5219,7 @@ GameObject:
   - component: {fileID: 1352215413}
   - component: {fileID: 1352215412}
   - component: {fileID: 1352215415}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TreasureButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5224,7 +5290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowTreasuresPanel
         m_Mode: 1
@@ -5289,50 +5355,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!1 &1360113156
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1360113157}
-  - component: {fileID: 1360113158}
-  m_Layer: 0
-  m_Name: EventService
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1360113157
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360113156}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1058532579}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1360113158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360113156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83d35a1df2b3be40b0b81e496cc9380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1389140265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,7 +5366,7 @@ GameObject:
   - component: {fileID: 1389140266}
   - component: {fileID: 1389140268}
   - component: {fileID: 1389140267}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DecreaseButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5704,7 +5726,7 @@ GameObject:
   - component: {fileID: 1533533841}
   - component: {fileID: 1533533843}
   - component: {fileID: 1533533842}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeightHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5965,7 +5987,7 @@ GameObject:
   - component: {fileID: 1689056285}
   - component: {fileID: 1689056287}
   - component: {fileID: 1689056286}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeightBackgroundImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6040,7 +6062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697099254}
   - component: {fileID: 1697099255}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6104,7 +6126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727333780}
   - component: {fileID: 1727333781}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShopAndInventoryHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6169,7 +6191,7 @@ GameObject:
   - component: {fileID: 1731328064}
   - component: {fileID: 1731328066}
   - component: {fileID: 1731328065}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Buy/SellInfoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6303,7 +6325,7 @@ GameObject:
   - component: {fileID: 1755239779}
   - component: {fileID: 1755239781}
   - component: {fileID: 1755239780}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AllText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6437,7 +6459,7 @@ GameObject:
   - component: {fileID: 1771451155}
   - component: {fileID: 1771451157}
   - component: {fileID: 1771451156}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MoneyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6571,7 +6593,7 @@ GameObject:
   - component: {fileID: 1809322173}
   - component: {fileID: 1809322175}
   - component: {fileID: 1809322174}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ResourcesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6751,9 +6773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Rarity
-
-'
+  m_text: legendary
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f672e5b6a6cbad04a8697d8732b78c2a, type: 2}
   m_sharedMaterial: {fileID: -5070659408744638396, guid: f672e5b6a6cbad04a8697d8732b78c2a, type: 2}
@@ -6780,12 +6800,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
+  m_fontSize: 10
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 15
+  m_fontSizeMin: 0
+  m_fontSizeMax: 10
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6830,7 +6850,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825634924}
   m_CullTransparentMesh: 1
---- !u!1 &1858019859
+--- !u!1 &1850484444
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6838,22 +6858,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1858019860}
-  - component: {fileID: 1858019861}
+  - component: {fileID: 1850484445}
+  - component: {fileID: 1850484446}
   m_Layer: 0
-  m_Name: UIManager
+  m_Name: EventService
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1858019860
+--- !u!4 &1850484445
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858019859}
+  m_GameObject: {fileID: 1850484444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -6862,26 +6882,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1058532579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1858019861
+--- !u!114 &1850484446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858019859}
+  m_GameObject: {fileID: 1850484444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c3bec146a67d5049a6fef5dafb8f7a3, type: 3}
+  m_Script: {fileID: 11500000, guid: a83d35a1df2b3be40b0b81e496cc9380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfoPanel: {fileID: 722070038}
-  buySellPanel: {fileID: 798250103}
-  currencyText: {fileID: 1771451156}
-  weightText: {fileID: 943693341}
-  buySellInfoHeading: {fileID: 1731328065}
-  buySellInfoText: {fileID: 1156281636}
-  buySellButtonText: {fileID: 1433711163}
-  transactionStatusText: {fileID: 841260390}
 --- !u!1 &1864882704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6935,10 +6947,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 5
+    m_Top: 7
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: -68
+  m_Spacing: -65
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -6959,7 +6971,7 @@ GameObject:
   - component: {fileID: 1865510758}
   - component: {fileID: 1865510757}
   - component: {fileID: 1865510760}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ConsumablesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7030,7 +7042,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ShowConsumablesPanel
         m_Mode: 1
@@ -7108,7 +7120,7 @@ GameObject:
   - component: {fileID: 1886812077}
   - component: {fileID: 1886812079}
   m_Layer: 5
-  m_Name: 'ItemprizeImage '
+  m_Name: 'ItemTypeImage '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7200,7 +7212,7 @@ GameObject:
   - component: {fileID: 1927113677}
   - component: {fileID: 1927113676}
   - component: {fileID: 1927113675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeaponGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7261,15 +7273,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 5
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 70, y: 60}
+  m_Spacing: {x: 5, y: 5}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 5
 --- !u!114 &1927113677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7545,7 +7557,7 @@ GameObject:
   - component: {fileID: 2025162810}
   - component: {fileID: 2025162812}
   - component: {fileID: 2025162811}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TreasureText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7681,7 +7693,7 @@ GameObject:
   - component: {fileID: 2042243926}
   - component: {fileID: 2042243925}
   - component: {fileID: 2042243924}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ConfirmButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7767,7 +7779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858019861}
+      - m_Target: {fileID: 875814564}
         m_TargetAssemblyTypeName: ShopAndInventory.UIManager, Assembly-CSharp
         m_MethodName: ConfirmPayment
         m_Mode: 1
@@ -7828,7 +7840,7 @@ GameObject:
   - component: {fileID: 2078686988}
   - component: {fileID: 2078686990}
   - component: {fileID: 2078686989}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ConsumablesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7962,7 +7974,7 @@ GameObject:
   - component: {fileID: 2135907578}
   - component: {fileID: 2135907580}
   - component: {fileID: 2135907579}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MoneyBackgroundImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}

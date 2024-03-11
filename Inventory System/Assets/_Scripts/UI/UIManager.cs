@@ -74,7 +74,10 @@ namespace ShopAndInventory
         private void PopUpInfoPanel(int layer, int itemIndex)
         {
             if (buySellPanel.activeInHierarchy)
+            {
                 CloseBuySellPanel();
+
+            }
 
             ItemScriptableObject item;
             if (layer == inventoryPanel.layer)
@@ -103,8 +106,8 @@ namespace ShopAndInventory
 
             itemInfoPanel.SetActive(true);
             itemInfoPanelTexts[0].text = itemInfo.name.ToString();
-            itemInfoPanelTexts[1].text = itemInfo.type.ToString();
-            itemInfoPanelTexts[2].text = itemInfo.itemDescription.ToString();
+            itemInfoPanelTexts[1].text = itemInfo.itemDescription.ToString();
+            itemInfoPanelTexts[2].text = itemInfo.type.ToString();
             itemInfoPanelTexts[3].text = itemInfo.rarity.ToString();
             itemInfoPanelTexts[4].text = "Weight: " + itemInfo.weight.ToString();
             itemInfoPanelTexts[5].text = "Price: " + price.ToString() + " Qty: " + itemInfo.quantity.ToString();

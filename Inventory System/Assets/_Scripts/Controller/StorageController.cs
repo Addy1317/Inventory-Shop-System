@@ -64,12 +64,10 @@ namespace ShopAndInventory
             SetActivePanel(ItemType.None);
         }
 
-        private void DoBuyTransaction(ItemScriptableObject currentItemSelected, int itemAmountSelected)
+        private void DoBuyTransaction(ItemScriptableObject currentItemSelected, int itemAmountSelected) 
         {
             if (!CheckBuyTransactionPossibility(currentItemSelected, itemAmountSelected))
-            {
                 return;
-            }
 
             ItemScriptableObject itemToBeAdded = GameObject.Instantiate(currentItemSelected);
             itemToBeAdded.name = currentItemSelected.name;
@@ -78,7 +76,6 @@ namespace ShopAndInventory
             inventoryService.AddItemToInventory(itemToBeAdded, itemAmountSelected);
             shopService.RemoveItemFromShop(currentItemSelected, itemAmountSelected);
         }
-
 
         private bool CheckBuyTransactionPossibility(ItemScriptableObject itemToBeAdded, int itemAmountSelected)
         {
@@ -172,6 +169,7 @@ namespace ShopAndInventory
         public void GatherResources() 
         {
             inventoryService.FillInventory();
+            Debug.Log("Gathering Resources"+ inventoryService);
         }
 
         private void HandleClickLogic()

@@ -27,7 +27,7 @@ namespace ShopAndInventory
             weightLimit = inventoryScriptableObject.weightLimit;
 
             currentWeight = 0f;
-            currentcoinsOwned = 0;
+            currentcoinsOwned = 10000;
 
             isGathering = false;
 
@@ -111,7 +111,7 @@ namespace ShopAndInventory
         public void FillInventory()
         {
             var resourcesGathered = Resources.LoadAll<ItemScriptableObject>("ItemSOs/ResourceGathering");
-
+            Debug.Log("FIlling The Inventory" + resourcesGathered); 
             isGathering = true;
 
             foreach (var item in resourcesGathered)
